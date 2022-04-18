@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Transaction;
+<<<<<<< HEAD
+=======
+use App\Models\User;
+>>>>>>> b58082f (send Email using sendinblue)
 use Illuminate\Http\Request;
 
 class TransactionController extends Controller
@@ -19,7 +23,16 @@ class TransactionController extends Controller
             'user_id' => $request->user_id,
             'product_id' => $request->product_id,
         ]);
+
         $dataTransaction = Transaction::with(['user', 'product'])->where('id', $transaction->id)->first();
+
+        $details = [
+            'title' => 'Kamu berhasil membeli barang',
+            'body' => 'Barang yang kamu beli: ' . $dataTransaction->product->name
+        ];
+
+        \Mail::to($dataTransaction->user->email)->send(new \App\Mail\OrderMail($details));
+
         return response()->json(compact('message', 'dataTransaction'), 200);
     }
 

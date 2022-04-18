@@ -851,6 +851,7 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
             "version": "v9.6.0",
             "source": {
                 "type": "git",
@@ -861,6 +862,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/47940a1a8774b96696ed57e6736ccea4a880c057",
                 "reference": "47940a1a8774b96696ed57e6736ccea4a880c057",
+=======
+            "version": "v9.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "9f468689964ac80b674a2fe71a56baa7e9e20493"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9f468689964ac80b674a2fe71a56baa7e9e20493",
+                "reference": "9f468689964ac80b674a2fe71a56baa7e9e20493",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -1022,6 +1035,7 @@
                 "framework",
                 "laravel"
             ],
+<<<<<<< HEAD
             "time": "2022-03-29T14:41:26+00:00"
         },
         {
@@ -1036,6 +1050,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/sanctum/zipball/5be160413b6f37dcf8758663edeab12d0e806f56",
                 "reference": "5be160413b6f37dcf8758663edeab12d0e806f56",
+=======
+            "time": "2022-04-12T15:43:03+00:00"
+        },
+        {
+            "name": "laravel/sanctum",
+            "version": "v2.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sanctum.git",
+                "reference": "31fbe6f85aee080c4dc2f9b03dc6dd5d0ee72473"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/31fbe6f85aee080c4dc2f9b03dc6dd5d0ee72473",
+                "reference": "31fbe6f85aee080c4dc2f9b03dc6dd5d0ee72473",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -1083,7 +1113,11 @@
                 "laravel",
                 "sanctum"
             ],
+<<<<<<< HEAD
             "time": "2022-03-28T13:53:05+00:00"
+=======
+            "time": "2022-04-08T13:39:49+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "laravel/serializable-closure",
@@ -1206,6 +1240,7 @@
         },
         {
             "name": "league/commonmark",
+<<<<<<< HEAD
             "version": "2.2.3",
             "source": {
                 "type": "git",
@@ -1216,6 +1251,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/47b015bc4e50fd4438c1ffef6139a1fb65d2ab71",
                 "reference": "47b015bc4e50fd4438c1ffef6139a1fb65d2ab71",
+=======
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "32a49eb2b38fe5e5c417ab748a45d0beaab97955"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/32a49eb2b38fe5e5c417ab748a45d0beaab97955",
+                "reference": "32a49eb2b38fe5e5c417ab748a45d0beaab97955",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -1224,17 +1271,29 @@
                 "php": "^7.4 || ^8.0",
                 "psr/event-dispatcher": "^1.0",
                 "symfony/deprecation-contracts": "^2.1 || ^3.0",
+<<<<<<< HEAD
                 "symfony/polyfill-php80": "^1.15"
+=======
+                "symfony/polyfill-php80": "^1.16"
+>>>>>>> b58082f (send Email using sendinblue)
             },
             "require-dev": {
                 "cebe/markdown": "^1.0",
                 "commonmark/cmark": "0.30.0",
                 "commonmark/commonmark.js": "0.30.0",
                 "composer/package-versions-deprecated": "^1.8",
+<<<<<<< HEAD
+=======
+                "embed/embed": "^4.4",
+>>>>>>> b58082f (send Email using sendinblue)
                 "erusev/parsedown": "^1.0",
                 "ext-json": "*",
                 "github/gfm": "0.29.0",
                 "michelf/php-markdown": "^1.4",
+<<<<<<< HEAD
+=======
+                "nyholm/psr7": "^1.5",
+>>>>>>> b58082f (send Email using sendinblue)
                 "phpstan/phpstan": "^0.12.88 || ^1.0.0",
                 "phpunit/phpunit": "^9.5.5",
                 "scrutinizer/ocular": "^1.8.1",
@@ -1249,7 +1308,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-main": "2.3-dev"
+=======
+                    "dev-main": "2.4-dev"
+>>>>>>> b58082f (send Email using sendinblue)
                 }
             },
             "autoload": {
@@ -1299,7 +1362,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2022-02-26T21:24:45+00:00"
+=======
+            "time": "2022-04-07T22:37:05+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "league/config",
@@ -1379,6 +1446,7 @@
         },
         {
             "name": "league/flysystem",
+<<<<<<< HEAD
             "version": "3.0.13",
             "source": {
                 "type": "git",
@@ -1389,6 +1457,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/15dc1ccb2db8daef507c4d3e501565bae42a9f0e",
                 "reference": "15dc1ccb2db8daef507c4d3e501565bae42a9f0e",
+=======
+            "version": "3.0.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "29eb78cac0be0c22237c5e0f6f98234d97037d79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/29eb78cac0be0c22237c5e0f6f98234d97037d79",
+                "reference": "29eb78cac0be0c22237c5e0f6f98234d97037d79",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -1461,6 +1541,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2022-04-02T08:55:13+00:00"
         },
         {
@@ -1475,6 +1556,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/aa70e813a6ad3d1558fc927863d47309b4c23e69",
                 "reference": "aa70e813a6ad3d1558fc927863d47309b4c23e69",
+=======
+            "time": "2022-04-14T14:57:13+00:00"
+        },
+        {
+            "name": "league/mime-type-detection",
+            "version": "1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/mime-type-detection.git",
+                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
+                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -1513,6 +1610,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2021-11-21T11:48:40+00:00"
         },
         {
@@ -1527,6 +1625,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d7fd7450628561ba697b7097d86db72662f54aef",
                 "reference": "d7fd7450628561ba697b7097d86db72662f54aef",
+=======
+            "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "4192345e260f1d51b365536199744b987e160edc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4192345e260f1d51b365536199744b987e160edc",
+                "reference": "4192345e260f1d51b365536199744b987e160edc",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -1608,7 +1722,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2022-03-14T12:44:37+00:00"
+=======
+            "time": "2022-04-08T15:43:54+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "nesbot/carbon",
@@ -2735,6 +2853,7 @@
         },
         {
             "name": "symfony/deprecation-contracts",
+<<<<<<< HEAD
             "version": "v3.0.0",
             "source": {
                 "type": "git",
@@ -2745,6 +2864,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/c726b64c1ccfe2896cb7df2e1331c357ad1c8ced",
                 "reference": "c726b64c1ccfe2896cb7df2e1331c357ad1c8ced",
+=======
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
+                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -2795,7 +2926,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2021-11-01T23:48:49+00:00"
+=======
+            "time": "2022-01-02T09:55:41+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "symfony/error-handler",
@@ -2947,6 +3082,7 @@
         },
         {
             "name": "symfony/event-dispatcher-contracts",
+<<<<<<< HEAD
             "version": "v3.0.0",
             "source": {
                 "type": "git",
@@ -2957,6 +3093,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/aa5422287b75594b90ee9cd807caf8f0df491385",
                 "reference": "aa5422287b75594b90ee9cd807caf8f0df491385",
+=======
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher-contracts.git",
+                "reference": "7bc61cc2db649b4637d331240c5346dcc7708051"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/7bc61cc2db649b4637d331240c5346dcc7708051",
+                "reference": "7bc61cc2db649b4637d331240c5346dcc7708051",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -3019,7 +3167,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2021-07-15T12:33:35+00:00"
+=======
+            "time": "2022-01-02T09:55:41+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "symfony/finder",
@@ -4179,6 +4331,7 @@
         },
         {
             "name": "symfony/service-contracts",
+<<<<<<< HEAD
             "version": "v3.0.0",
             "source": {
                 "type": "git",
@@ -4189,6 +4342,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/service-contracts/zipball/36715ebf9fb9db73db0cb24263c79077c6fe8603",
                 "reference": "36715ebf9fb9db73db0cb24263c79077c6fe8603",
+=======
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/service-contracts.git",
+                "reference": "e517458f278c2131ca9f262f8fbaf01410f2c65c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/e517458f278c2131ca9f262f8fbaf01410f2c65c",
+                "reference": "e517458f278c2131ca9f262f8fbaf01410f2c65c",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -4254,7 +4419,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2021-11-04T17:53:12+00:00"
+=======
+            "time": "2022-03-13T20:10:05+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "symfony/string",
@@ -4432,6 +4601,7 @@
         },
         {
             "name": "symfony/translation-contracts",
+<<<<<<< HEAD
             "version": "v3.0.0",
             "source": {
                 "type": "git",
@@ -4442,6 +4612,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/1b6ea5a7442af5a12dba3dbd6d71034b5b234e77",
                 "reference": "1b6ea5a7442af5a12dba3dbd6d71034b5b234e77",
+=======
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation-contracts.git",
+                "reference": "c4183fc3ef0f0510893cbeedc7718fb5cafc9ac9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/c4183fc3ef0f0510893cbeedc7718fb5cafc9ac9",
+                "reference": "c4183fc3ef0f0510893cbeedc7718fb5cafc9ac9",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -4503,7 +4685,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2021-09-07T12:43:40+00:00"
+=======
+            "time": "2022-01-02T09:55:41+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "symfony/var-dumper",
@@ -5135,6 +5321,7 @@
         },
         {
             "name": "laravel/sail",
+<<<<<<< HEAD
             "version": "v1.13.8",
             "source": {
                 "type": "git",
@@ -5145,6 +5332,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/sail/zipball/b00f1b64afff9c16355d23bb1e0f83a7ea9bbb7e",
                 "reference": "b00f1b64afff9c16355d23bb1e0f83a7ea9bbb7e",
+=======
+            "version": "v1.13.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sail.git",
+                "reference": "7bb294fe99fc42c3b1bee83fb667cd7698b3c385"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/7bb294fe99fc42c3b1bee83fb667cd7698b3c385",
+                "reference": "7bb294fe99fc42c3b1bee83fb667cd7698b3c385",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -5187,7 +5386,11 @@
                 "docker",
                 "laravel"
             ],
+<<<<<<< HEAD
             "time": "2022-03-23T12:35:34+00:00"
+=======
+            "time": "2022-04-04T15:21:51+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "mockery/mockery",
@@ -5314,6 +5517,7 @@
         },
         {
             "name": "nunomaduro/collision",
+<<<<<<< HEAD
             "version": "v6.1.0",
             "source": {
                 "type": "git",
@@ -5324,6 +5528,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nunomaduro/collision/zipball/df09e21a5e5d5a7d51a8b9ecd44d3dd150d97fec",
                 "reference": "df09e21a5e5d5a7d51a8b9ecd44d3dd150d97fec",
+=======
+            "version": "v6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nunomaduro/collision.git",
+                "reference": "c379636dc50e829edb3a8bcb944a01aa1aed8f25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/c379636dc50e829edb3a8bcb944a01aa1aed8f25",
+                "reference": "c379636dc50e829edb3a8bcb944a01aa1aed8f25",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -5334,10 +5550,17 @@
             },
             "require-dev": {
                 "brianium/paratest": "^6.4.1",
+<<<<<<< HEAD
                 "laravel/framework": "^9.0",
                 "nunomaduro/larastan": "^1.0.2",
                 "nunomaduro/mock-final-classes": "^1.1.0",
                 "orchestra/testbench": "^7.0.0",
+=======
+                "laravel/framework": "^9.7",
+                "nunomaduro/larastan": "^1.0.2",
+                "nunomaduro/mock-final-classes": "^1.1.0",
+                "orchestra/testbench": "^7.3.0",
+>>>>>>> b58082f (send Email using sendinblue)
                 "phpunit/phpunit": "^9.5.11"
             },
             "type": "library",
@@ -5393,7 +5616,11 @@
                     "type": "patreon"
                 }
             ],
+<<<<<<< HEAD
             "time": "2022-01-18T17:49:08+00:00"
+=======
+            "time": "2022-04-05T15:31:38+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "phar-io/manifest",
@@ -7190,6 +7417,7 @@
         },
         {
             "name": "spatie/laravel-ignition",
+<<<<<<< HEAD
             "version": "1.2.0",
             "source": {
                 "type": "git",
@@ -7200,6 +7428,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/2b54c8c66f2d280f25e15064ebe3d5e3eda19820",
                 "reference": "2b54c8c66f2d280f25e15064ebe3d5e3eda19820",
+=======
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-ignition.git",
+                "reference": "924d1ae878874ad0bb49f63b69a9af759a34ee78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/924d1ae878874ad0bb49f63b69a9af759a34ee78",
+                "reference": "924d1ae878874ad0bb49f63b69a9af759a34ee78",
+>>>>>>> b58082f (send Email using sendinblue)
                 "shasum": ""
             },
             "require": {
@@ -7270,7 +7510,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2022-04-01T21:01:58+00:00"
+=======
+            "time": "2022-04-14T18:04:51+00:00"
+>>>>>>> b58082f (send Email using sendinblue)
         },
         {
             "name": "theseer/tokenizer",

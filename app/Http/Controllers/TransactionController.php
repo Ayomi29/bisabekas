@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Transaction;
-use App\Models\User;
 use Illuminate\Http\Request;
 
 class TransactionController extends Controller
@@ -25,7 +24,7 @@ class TransactionController extends Controller
 
         $details = [
             'title' => 'Kamu berhasil membeli barang',
-            'body' => 'Barang yang kamu beli: ' . $dataTransaction->product->name
+            'body' => $dataTransaction->product->name
         ];
 
         \Mail::to($dataTransaction->user->email)->send(new \App\Mail\OrderMail($details));

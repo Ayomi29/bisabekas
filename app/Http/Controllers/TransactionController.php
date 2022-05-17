@@ -3,10 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Transaction;
-<<<<<<< HEAD
-=======
-use App\Models\User;
->>>>>>> b58082f (send Email using sendinblue)
 use Illuminate\Http\Request;
 
 class TransactionController extends Controller
@@ -28,7 +24,7 @@ class TransactionController extends Controller
 
         $details = [
             'title' => 'Kamu berhasil membeli barang',
-            'body' => 'Barang yang kamu beli: ' . $dataTransaction->product->name
+            'body' => $dataTransaction->product->name
         ];
 
         \Mail::to($dataTransaction->user->email)->send(new \App\Mail\OrderMail($details));

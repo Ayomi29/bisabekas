@@ -19,6 +19,55 @@ class ProductController extends Controller
         return response()->json(compact('message', 'product'), 200);
     }
 
+    public function apiStore(Request $request)
+    {
+        if ($request->hasFile('thumbnail')) {
+            $save = $request->file('thumbnail')->store('public/image');
+            $filename = $request->file('thumbnail')->hashName();
+            $imagePath = url('/') . '/storage/image/' . $filename;
+        }
+
+        $product = Product::create([
+            'user_id' => $request->user_id,
+            'name' => $request->name,
+            'description' => $request->description,
+            'thumbnail' => $imagePath,
+            'price' => $request->price,
+            'berat' => $request->berat,
+            'status' => '0'
+        ]);
+
+        $status = 'OK';
+        $status_code = '200';
+        $message = 'Berhasil Menambahkan data';
+        return response()->json(compact('status', 'status_code', 'message', 'product'), 200);
+    }
+
+    public function apiUpdate(Request $request)
+    {
+        $product = Product::findOrFail($request->id);
+        if ($request->hasFile('thumbnail')) {
+            $save = $request->file('thumbnail')->store('public/image');
+            $filename = $request->file('thumbnail')->hashName();
+            $imagePath = url('/') . '/storage/image/' . $filename;
+        }
+
+        $product->update([
+            'user_id' => $request->user_id,
+            'name' => $request->name,
+            'description' => $request->description,
+            'thumbnail' => $imagePath,
+            'price' => $request->price,
+            'berat' => $request->berat,
+            'status' => '0'
+        ]);
+
+        $status = 'OK';
+        $status_code = '200';
+        $message = 'Berhasil Mengubah data';
+        return response()->json(compact('status', 'status_code', 'message', 'product'), 200);
+    }
+
     public function index()
     {
         //
@@ -85,8 +134,20 @@ class ProductController extends Controller
      * @param  \App\Models\product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(product $product)
+    public function destroy(product $product, $id)
     {
-        //
+        $product = Product::findOrFail($id);
+        if ($product) {
+            $product->delete();
+            $status = 'OK';
+            $status_code = '200';
+            $message = 'Berhasil Menghpaus data';
+            return response()->json(compact('status', 'status_code', 'message'), 200);
+        } else {
+            $status = 'ERR';
+            $status_code = '401';
+            $message = 'Gagal Menghapus';
+            return response()->json(compact('status', 'status_code', 'message'), 401);
+        }
     }
 }

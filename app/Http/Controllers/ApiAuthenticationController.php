@@ -22,4 +22,26 @@ class ApiAuthenticationController extends Controller
             return response()->json(compact('status', 'message', 'user', 'token'), 200);
         }
     }
+
+    public function register(Request $request)
+    {
+        $userCheck = User::where('email', request('email'))->first();
+        if($userCheck == null){
+            $user = User::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'password' => bcrypt($request->password),
+            ]);
+            $credentials = ['email' => $user->email, 'password' => request('password')];
+            if ($token = JWTAuth::attempt($credentials)) {
+                $status = 'OK';
+                $message = 'Berhasil Register';
+                return response()->json(compact('status', 'message', 'user', 'token'), 200);
+            }
+        } else {
+            $status = 'ERR';
+            $message = 'Gagal Register, User Terdaftar dengan email sama';
+            return response()->json(compact('status', 'message'), 401);
+        }
+    }
 }

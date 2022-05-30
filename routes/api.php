@@ -22,8 +22,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('login', [ApiAuthenticationController::class, 'login']);
+Route::post('register', [ApiAuthenticationController::class, 'register']);
 
 Route::middleware('jwt.auth')->group(function () {
     Route::get('product', [ProductController::class, 'apiIndex']);
+    Route::post('add-product', [ProductController::class, 'apiStore']);
+    Route::post('edit-product', [ProductController::class, 'apiUpdate']);
+    Route::delete('products/{id}', [ProductController::class, 'destroy']);
     Route::post('buy-product', [TransactionController::class, 'buyProduct']);
 });

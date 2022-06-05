@@ -2,16 +2,14 @@
     <div class="container mt-4">
         <div class="row justify-content-center">
             <div class="col-lg-5">
-
                 <main class="form-signin">
                     <form @submit="login">
-
                         <h1 class="h3 my-4 fw-normal text-center">Login</h1>
                         <div class="form-floating">
                             <input
                                 type="email"
                                 name="email"
-                                class="form-control"                           
+                                class="form-control"
                                 id="email"
                                 v-model="user.email"
                                 placeholder="name@example.com"
@@ -19,7 +17,6 @@
                                 required
                             />
                             <label for="email">Email address</label>
-                            
                         </div>
                         <div class="form-floating">
                             <input
@@ -50,12 +47,8 @@
 </template>
 
 <script setup>
-// export default {
-//     name: "RegisterView",
-// };
 import store from "../store";
 import { useRouter } from "vue-router";
-
 
 const router = useRouter();
 const user = {
@@ -63,19 +56,19 @@ const user = {
     password: "",
 };
 
-
 function login(ev) {
     ev.preventDefault();
-    loading.value = true;
-    store
-        .dispatch("login", user)
-        .then(() => {
-            router.push({
-                name: "Payment",
-            });
-        })
-        
-    };
-
+    store.dispatch("login", user).then(() => {
+        router.push({
+            name: "Payment",
+        });
+    });
+}
 </script>
+<script>
+export default {
+    name: "RegisterView",
+};
+</script>
+
 <style scoped></style>

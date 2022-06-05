@@ -34,13 +34,13 @@ const router = createRouter({
         {
             path: "/payment",
             name: "PaymentView",
-            meta: {requiresAuth: true},
+            meta: { requiresAuth: true },
             component: payment,
         },
         {
             path: "/login",
             name: "LoginView",
-            meta: {isGuest: true},
+            meta: { isGuest: true },
             component: login,
         },
         {
@@ -52,13 +52,13 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  if (to.meta.requiresAuth && !store.state.user.token) {
-    next({ name: "LoginView" });
-  } else if (store.state.user.token && to.meta.isGuest) {
-    next({ name: "ProductView" });
-  } else {
-    next();
-  }
+    if (to.meta.requiresAuth && !store.state.user.token) {
+        next({ name: "LoginView" });
+    } else if (store.state.user.token && to.meta.isGuest) {
+        next({ name: "ProductView" });
+    } else {
+        next();
+    }
 });
 
 export default router;

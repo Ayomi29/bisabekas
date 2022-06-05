@@ -7,8 +7,6 @@
                         Form Registerasi
                     </h1>
                     <form @submit="register">
-    
-
                         <div class="form-floating">
                             <input
                                 type="text"
@@ -18,10 +16,8 @@
                                 id="name"
                                 placeholder="name"
                                 required
-                        
                             />
                             <label for="name">Name</label>
-                            
                         </div>
                         <div class="form-floating">
                             <input
@@ -32,10 +28,8 @@
                                 id="username"
                                 placeholder="username"
                                 required
-                        
                             />
                             <label for="username">Username</label>
-                            
                         </div>
                         <div class="form-floating">
                             <input
@@ -46,10 +40,8 @@
                                 id="email"
                                 placeholder="name@example.com"
                                 required
-                        
                             />
                             <label for="email">Email address</label>
-        
                         </div>
                         <div class="form-floating">
                             <input
@@ -60,10 +52,8 @@
                                 id="password"
                                 placeholder="Password"
                                 required
-                        
                             />
                             <label for="password">Password</label>
-                            
                         </div>
                         <button
                             class="w-100 btn btn-lg btn-primary mt-3"
@@ -85,12 +75,8 @@
 </template>
 
 <script setup>
-// export default {
-//     name: "RegisterView",
-// };
 import store from "../store";
 import { useRouter } from "vue-router";
-
 
 const router = useRouter();
 const user = {
@@ -100,19 +86,18 @@ const user = {
     password: "",
 };
 
-
 function register(ev) {
     ev.preventDefault();
-    loading.value = true;
-    store
-        .dispatch("register", user)
-        .then(() => {
-            router.push({
-                name: "LoginView",
-            });
-        })
-        
-    };
-
+    store.dispatch("register", user).then(() => {
+        router.push({
+            name: "LoginView",
+        });
+    });
+}
+</script>
+<script>
+export default {
+    name: "RegisterView",
+};
 </script>
 <style scoped></style>
